@@ -17,7 +17,7 @@ body {
   font-size: 17px;
   height: 40px;
   padding: 15px 20px;
-  width: 75%;
+  width: 80%;
 }
 
 .search-button {
@@ -28,15 +28,52 @@ body {
   border-radius: 10px;
   height: 40px;
   padding: 13px 18px;
-}
-a {
-  color: RGB(197 25 177);
+  width: 18%;
 }
 
+main {
+  padding: 20px 0;
+}
+
+.weather-data {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.weather-app-temp-container {
+  display: flex;
+}
+
+.weather-temperature {
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.weather-icon {
+  font-size: 28px;
+  margin-top: 14px;
+  margin-left: 10px;
+}
 h1 {
   border-bottom: 1px solid RGB(226 218 231);
   padding: 0 0 10px 0;
+  font-size: 36px;
+  margin: 20px 0 10px;
+  line-height: 36px;
+}
 
+p {
+  line-height: 20px;
+  font-size: 16px;
+}
+
+p strong {
+  color: rebeccapurple;
+}
+
+a {
+  color: RGB(197 25 177);
 }
 
 footer {
