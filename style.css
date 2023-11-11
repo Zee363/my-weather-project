@@ -1,0 +1,45 @@
+body {
+  background-color: RGB(226 218 231);
+  font-family: 'Roboto', sans-serif;
+}
+
+.isimo-sezulu {
+  background: white;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 20px;
+}
+.search-form-input { 
+  background-color: RGB(226 218 231);
+  border: solid 1px RGB(226 218 231) ;
+  border-radius: 30px;
+  font-size: 17px;
+  height: 40px;
+  padding: 15px 20px;
+  width: 75%;
+}
+
+.search-button {
+  background-color: RGB(197 25 177);
+  margin-left: 3px;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  padding: 13px 18px;
+}
+a {
+  color: RGB(197 25 177);
+}
+
+h1 {
+  border-bottom: 1px solid RGB(226 218 231);
+  padding: 0 0 10px 0;
+
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+}
