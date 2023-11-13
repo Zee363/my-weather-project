@@ -51,8 +51,9 @@ main {
 }
 
 .weather-icon {
-  font-size: 28px;
-  margin-top: 14px;
+  width: 68px;
+  height: 58px;
+  margin-top: 8px;
   margin-left: 10px;
 }
 .weather-app-unit {
