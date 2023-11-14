@@ -60,6 +60,11 @@ main {
   margin-top: 8px;
   font-size: 28px;
 }
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
 h1 {
   border-bottom: 1px solid RGB(226 218 231);
   padding: 0 0 10px 0;
