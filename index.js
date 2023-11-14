@@ -30,9 +30,6 @@ function formattedDate(date) {
   }
 
   return `${day} ${hours}:${minutes}`;
-
-  
-
 }
 
 function findCity(city) {
@@ -50,7 +47,32 @@ function submitSearch(event) {
   findCity(searchInput.value);
 }
 
+function showForecast() {
+let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+let forecastHtml = "";
+
+days.forEach(function (day) {
+forecastHtml = 
+ forecastHtml + 
+ `
+  <div class="weather-forecast-day">${day}</div>
+    <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png" alt=""  width="42" />
+      <div class="weather-forecast-temperatures">
+        <span class="weather-forecast-temp-max"><strong>18&deg;</strong></span>
+        <span class="weather-forecast-temp-min">12&deg;</span> 
+       </div>
+      </div>
+      </div>
+    </div>
+    `;  
+});
+
+let forecastElement = document.querySelector("#forecast");
+forecastElement.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", submitSearch);
 
 findCity("Cape Town");
+showForecast();
