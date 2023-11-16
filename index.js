@@ -48,26 +48,26 @@ function submitSearch(event) {
 }
 
 function showForecast() {
-let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+let forecastElement = document.querySelector("#forecast");
+
+let days = ["Fri", "Sat", "Sun", "Mon", "Tue"];
 let forecastHtml = "";
 
 days.forEach(function (day) {
-forecastHtml = 
- forecastHtml + 
- `
-  <div class="weather-forecast-day">${day}</div>
-    <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png" alt=""  width="42" />
+forecastHtml +=
+
+  `<div class="weather-forecast-day">
+      <div class="weather-forecast-date">${day}</div>
+      <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png" alt="" srcset="" width="42">
       <div class="weather-forecast-temperatures">
-        <span class="weather-forecast-temp-max"><strong>18&deg;</strong></span>
-        <span class="weather-forecast-temp-min">12&deg;</span> 
-       </div>
-      </div>
-      </div>
-    </div>
-    `;  
+        <span class="weather-forecast-temperature-max"><strong>17&deg;</strong>
+        </span>
+        <span class="weather-forecast-temperature-min">7&deg;</span>
+        </div>
+        </div>
+      `;
 });
 
-let forecastElement = document.querySelector("#forecast");
 forecastElement.innerHTML = forecastHtml;
 }
 

@@ -61,24 +61,24 @@ main {
   font-size: 28px;
 }
 
-.weather-forecast {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.weather-forecast-day {
+.weather-forecast-date {
   font-size: 16px;
   color: grey;
+  text-align: left;
 }
 
-.weather-forecast-temp-min {
+.weather-forecast-temperature-min {
   opacity: 0.6;
 }
 
 .weather-forecast-temperatures {
   font-size: 12px;
+  text-align: center;
 }
-
+ #forecast {
+  display: flex;
+  justify-content: space-between;
+ }
 h1 {
   border-bottom: 1px solid RGB(226 218 231);
   padding: 0 0 10px 0;
