@@ -1,5 +1,5 @@
 body {
-  background-color: RGB(226 218 231);
+  background-image: url(https://images.unsplash.com/photo-1514477917009-389c76a86b68?q=80&w=1367&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -74,6 +74,7 @@ main {
 .weather-forecast-temperatures {
   font-size: 12px;
   text-align: center;
+  color: rebeccapurple;
 }
 .weather-forecast-icon {
   width: 66px;
